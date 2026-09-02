@@ -1,0 +1,38 @@
+#!/bin/bash
+
+CFLAGS="-march=meteorlake -mtune=meteorlake -O2 -fomit-frame-pointer -pipe" \
+      ./configure \
+      --prefix=/usr/local/emacs-32 \
+      --enable-locallisppath=/usr/share/emacs/site-lisp \
+      --enable-link-time-optimization \
+      --with-mailutils \
+      --with-sound=alsa \
+      --with-wide-int \
+      --with-xpm \
+      --with-jpeg \
+      --with-tiff \
+      --with-gif \
+      --with-png \
+      --with-rsvg \
+      --with-webp \
+      --with-sqlite3 \
+      --with-lcms2 \
+      --with-libsystemd \
+      --with-cairo \
+      --with-xml2 \
+      --with-imagemagick \
+      --with-tree-sitter \
+      --with-harfbuzz \
+      --with-libotf \
+      --with-pgtk \
+      --with-dbus \
+      --with-gsettings \
+      --with-gnutls \
+      --with-zlib \
+      --with-modules \
+      --with-threads \
+      --with-file-notification=inotify \
+      --without-xwidgets \
+      --with-native-compilation \
+      --with-libgmp \
+      --disable-gc-mark-trace
