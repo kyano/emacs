@@ -644,6 +644,8 @@ along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
 	<string>Emacs @version@ @copyright@</string>
 	<key>CFBundleIconFile</key>
 	<string>Emacs.icns</string>
+        <key>CFBundleIconName</key>
+        <string>EmacsLG2</string>
 	<key>CFBundleIdentifier</key>
 	<string>org.gnu.Emacs</string>
 	<key>CFBundleInfoDictionaryVersion</key>
