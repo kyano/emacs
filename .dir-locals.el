@@ -66,4 +66,5 @@
  (texinfo-mode . ((electric-quote-comment . nil)
                   (electric-quote-string . nil)
 	          (mode . bug-reference-prog)))
- (outline-mode . ((mode . bug-reference))))
+ (outline-mode . ((mode . bug-reference)))
+ (dired-mode . ((tab-width . 1))))
