@@ -1,0 +1,39 @@
+#!/bin/bash
+
+CFLAGS="-march=znver1 -mtune=znver1 -O2 -fomit-frame-pointer -pipe" \
+      ./configure \
+      --prefix=/usr/local/emacs-32-nogui \
+      --enable-locallisppath=/usr/share/emacs/site-lisp \
+      --enable-link-time-optimization \
+      --with-mailutils \
+      --without-sound \
+      --with-wide-int \
+      --without-xpm \
+      --without-jpeg \
+      --without-tiff \
+      --without-gif \
+      --without-png \
+      --without-rsvg \
+      --without-webp \
+      --with-sqlite3 \
+      --without-lcms2 \
+      --with-libsystemd \
+      --without-cairo \
+      --with-xml2 \
+      --without-imagemagick \
+      --with-tree-sitter \
+      --without-harfbuzz \
+      --without-libotf \
+      --without-pgtk \
+      --with-dbus \
+      --without-gsettings \
+      --with-gnutls \
+      --with-zlib \
+      --with-modules \
+      --with-threads \
+      --with-file-notification=inotify \
+      --without-xwidgets \
+      --with-native-compilation \
+      --without-x \
+      --with-libgmp \
+      --disable-gc-mark-trace
