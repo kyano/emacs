@@ -1,0 +1,54 @@
+#!/bin/bash
+
+export CPPFLAGS="-I/opt/homebrew/include${CPPFLAGS:+ $CPPFLAGS}"
+export LDFLAGS="-L/opt/homebrew/lib${LDFLAGS:+ $LDFLAGS}"
+
+export CPPFLAGS="-I/opt/homebrew/opt/sqlite/include${CPPFLAGS:+ $CPPFLAGS}"
+export LDFLAGS="-L/opt/homebrew/opt/sqlite/lib${LDFLAGS:+ $LDFLAGS}"
+
+export CPPFLAGS="-I/opt/homebrew/opt/zlib/include${CPPFLAGS:+ $CPPFLAGS}"
+export LDFLAGS="-L/opt/homebrew/opt/zlib/lib${LDFLAGS:+ $LDFLAGS}"
+
+export CPPFLAGS="-I/opt/homebrew/opt/ncurses/include${CPPFLAGS:+ $CPPFLAGS}"
+export LDFLAGS="-L/opt/homebrew/opt/ncurses/lib${LDFLAGS:+ $LDFLAGS}"
+
+export CPPFLAGS="-I/opt/homebrew/opt/libxml2/include${CPPFLAGS:+ $CPPFLAGS}"
+export LDFLAGS="-L/opt/homebrew/opt/libxml2/lib${LDFLAGS:+ $LDFLAGS}"
+
+export CFLAGS="-mcpu=apple-m1 -mtune=apple-m1 -O2 -fomit-frame-pointer -pipe"
+
+./configure \
+    --enable-locallisppath="/opt/homebrew/share/emacs/site-lisp" \
+    --with-mailutils \
+    --without-sound \
+    --with-wide-int \
+    --without-xpm \
+    --with-jpeg \
+    --with-tiff \
+    --with-gif \
+    --with-png \
+    --with-rsvg \
+    --with-webp \
+    --with-sqlite3 \
+    --with-lcms2 \
+    --without-libsystemd \
+    --without-cairo \
+    --with-xml2 \
+    --with-native-image-api \
+    --without-imagemagick \
+    --with-tree-sitter \
+    --without-harfbuzz \
+    --without-libotf \
+    --without-pgtk \
+    --with-ns \
+    --without-dbus \
+    --without-gsettings \
+    --with-gnutls \
+    --with-zlib \
+    --with-modules \
+    --with-threads \
+    --with-file-notification=kqueue \
+    --without-xwidgets \
+    --with-native-compilation \
+    --with-libgmp \
+    --disable-gc-mark-trace
