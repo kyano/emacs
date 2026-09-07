@@ -48,7 +48,7 @@ export CFLAGS="-mcpu=apple-m1 -mtune=apple-m1 -O2 -fomit-frame-pointer -pipe"
     --with-modules \
     --with-threads \
     --with-file-notification=kqueue \
-    --without-xwidgets \
+    --with-xwidgets \
     --with-native-compilation \
     --with-libgmp \
     --disable-gc-mark-trace
