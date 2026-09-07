@@ -87,9 +87,9 @@ along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.  */
       self.navigationDelegate = self;
       self.UIDelegate = self;
       self.customUserAgent =
-        @"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6)"
-        @" AppleWebKit/603.3.8 (KHTML, like Gecko)"
-        @" Version/11.0.1 Safari/603.3.8";
+	@"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+	@" AppleWebKit/605.1.15 (KHTML, like Gecko)"
+	@" Version/26.6.2 Safari/605.1.15";
       [scriptor addScriptMessageHandler:self name:@"keyDown"];
       WKUserScript *userScript = [[[WKUserScript alloc]
                                     initWithSource:xwScript
