@@ -388,8 +388,8 @@ void
 nsxwidget_webkit_zoom (struct xwidget *xw, double zoom_change)
 {
   XwWebView *xwWebView = (XwWebView *) xw->xwWidget;
-  xwWebView.magnification += zoom_change;
-  /* TODO: setMagnification:centeredAtPoint.  */
+  double new_zoom = xwWebView.pageZoom + zoom_change;
+  xwWebView.pageZoom = MAX (0.1, MIN (5.0, new_zoom));
 }
 
 /* Recursively convert an objc native type JavaScript value to a Lisp
